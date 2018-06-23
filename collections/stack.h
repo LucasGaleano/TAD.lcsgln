@@ -3,12 +3,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "node.h"
 
-
-typedef struct nodo{
-  void* data;
-  struct nodo* next;
-}t_nodo;
 
 typedef struct t_stack{
   t_nodo* head;

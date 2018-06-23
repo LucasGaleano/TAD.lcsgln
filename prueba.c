@@ -13,5 +13,7 @@ int main(){
   bst_insert(bst,"chau","5");
   bst_insert(bst,"casa","2");
   print_inorder_tree(bst->root);
+  char* valorEncontrado = bst_search_value(bst,"4");
+  printf("%s\n", valorEncontrado);
 
 }

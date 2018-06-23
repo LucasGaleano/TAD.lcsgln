@@ -44,6 +44,22 @@ void bst_insert(t_bst* tree, void* data, char* NewKey){
   }
 }
 
+void* bst_search_value(t_bst* tree, char* key){
+
+  t_tree_node* child = tree->root;
+  while(child!=NULL && child->key != key){
+    if(CompararString(child->key,key)<0)
+      child = child->left;
+    else
+      child = child->right;
+  }
+  if(child == NULL)
+    return NULL;
+  else
+    return child->data;
+}
+
+
 void print_inorder_tree(t_tree_node* root){
   if(root != NULL){
     print_inorder_tree(root->left);
