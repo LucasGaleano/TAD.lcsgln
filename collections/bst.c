@@ -9,20 +9,11 @@ t_bst* bst_create(){
   return bst;
 }
 
-t_tree_node* tree_node_create(void* data, char* key){
-  t_tree_node* tree_node = malloc(sizeof(t_tree_node));
-  tree_node->data = data;
-  tree_node->key = key;
-  tree_node->parent = NULL;
-  tree_node->left = NULL;
-  tree_node->right = NULL;
-  return tree_node;
-
-}
-
 void bst_insert(t_bst* tree, void* data, char* NewKey){
 
-  t_tree_node* nodeToInsert = tree_node_create(data,NewKey);
+  t_tree_node* nodeToInsert = tree_node_create();
+  nodeToInsert->data = data;
+  nodeToInsert->key =
   t_tree_node* parent = NULL;
   t_tree_node* child = tree->root;
 

@@ -11,7 +11,7 @@ typedef struct bst{
   int numbersOfLeaf;
 }t_bst;
 
-t_tree_node* tree_node_create(void* data,char* key);
+
 t_bst* bst_create();
 void print_inorder_tree(t_tree_node* root);
 void bst_insert(t_bst* tree, void* data, char* key);
