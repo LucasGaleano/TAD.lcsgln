@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "collections/stack.h"
-#include "collections/bst.h"
+#include <tad-lcsgln/stack.h>
+#include <tad-lcsgln/bst.h>
 
 int main(){
 
@@ -10,8 +10,6 @@ int main(){
   bst_insert(bst,"gato","7");
   bst_insert(bst,"perro","21");
   bst_insert(bst,"cosas","24");
-  bst_insert(bst,"chau","5");
-  bst_insert(bst,"casa","2");
   print_inorder_tree(bst->root);
   char* valorEncontrado = bst_search_value(bst,"4");
   printf("%s\n", valorEncontrado);
