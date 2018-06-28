@@ -7,6 +7,7 @@ t_stack* stack_create(){
   return listaNueva;
 
 }
+
 void stack_push(t_stack* stack, void* stackElem){
 
   t_nodo* nodo = malloc(sizeof(t_nodo));
